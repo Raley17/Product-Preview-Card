@@ -9,17 +9,44 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    Perfume Gabrielle Essence Eau De Parfum A floral, solar and voluptuous
-    interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-    CHANEL. $149.99 $169.99 Add to Cart
+    <main>
+      <article>
+        <section class="topsec">
+          <img src="./images/image-product-mobile.jpg" alt="Mobile Image" />
+        </section>
+        <section class="midsec">
+          <p class="fontone space">Perfume</p>
+          <h1 class="fontthree">Gabrielle Essence Eau De Parfum</h1>
+          <p class="fontone">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge Perfumer-Creator for the House of CHANEL.
+          </p>
+        </section>
+        <section class="bottomsec">
+          <h2 class="fontthree">
+            $149.99 <span class="fontone">$169.99</span>
+          </h2>
+          <button class="fonttwo">
+            <img src="./images/icon-cart.svg" alt="Cart Icon" />Add to Cart
+          </button>
+        </section>
+      </article>
+    </main>
 
-    <footer class="attribution">
+    <footer class="attribution fontone">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      <br />
       Coded by <a href="#">Your Name Here</a>.
     </footer>
   </body>
