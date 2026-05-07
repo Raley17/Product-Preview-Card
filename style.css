@@ -46,6 +46,7 @@ article {
   margin: 1em;
   border-radius: 1em;
   background-color: var(--color-6);
+  max-width: 21.5em;
   .topsec {
     img {
       width: 100%;
@@ -124,27 +125,27 @@ footer {
 @media screen and (min-width: 768px) {
   article {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40em;
 
-    .topsec picture {
-      display: block;
-      height: 100%;
+    .left,
+    .right {
+      max-width: 19em;
+      width: 19em;
     }
+
     .topsec {
-      picture,
       img {
-        border-radius: 1em 0em 0em 1em;
-        padding-bottom: 0em;
+        display: block;
+        padding-bottom: 0;
+        border-radius: 1em 0 0 1em;
       }
     }
 
-    .midsec {
-      padding: 2em;
+    .midsec,
+    .bottomsec {
+      width: 100%;
     }
-  }
-  .left {
-    width: 50%;
-  }
-  .right {
-    width: 40%;
   }
 }
